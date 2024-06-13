@@ -107,6 +107,8 @@ img {
 
 .nav {
   position: sticky;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .nav_container {
@@ -137,6 +139,8 @@ img {
 @media (min-width: 1024px) {
   .nav {
     height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .nav_container {
     flex-direction: row;
