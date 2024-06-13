@@ -254,7 +254,9 @@ button {
 }
 
 .img_tratamiento_img {
-  height: 400px;
+  width: min(80vw, 80vh, 25rem);
+  height: min(80vw, 80vh, 25rem);
+  object-fit: cover;
 }
 
 .img_tratamiento_container {
