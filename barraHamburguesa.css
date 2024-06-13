@@ -1,0 +1,57 @@
+.barraHamb_barra {
+  height: 0.5rem;
+  background-color: white;
+  width: 3rem;
+  border-radius: 3px;
+}
+
+.barraHamb_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.barraHamb_button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.barraHamb {
+  transition-duration: 0.5s;
+}
+
+.barraHamb:active {
+  border-radius: 0.5rem;
+  background-color: #4b107e;
+}
+
+@media (any-hover: hover) {
+  .barraHamb:hover {
+    border-radius: 0.5rem;
+    background-color: #4b107e;
+  }
+}
+
+@media (min-width: 1024px) {
+  .barraHamb {
+    display: none;
+  }
+}
+
+.barraHamb_open_a {
+  background-color: white;
+  transform: translate(0, 1rem) rotate(45deg);
+}
+
+.barraHamb_open_b {
+  background-color: transparent;
+  transform: translate(-4rem, 0);
+}
+
+.barraHamb_open_c {
+  background-color: white;
+  transform: translate(0, -1rem) rotate(-45deg);
+}

@@ -1,0 +1,106 @@
+.redes_container {
+  display: none;
+}
+
+.redes_icon {
+  transition: all 0.4s;
+  width: 2rem;
+  height: 2rem;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(790%)
+    hue-rotate(219deg) brightness(120%) contrast(100%);
+}
+
+@media (any-hover: hover) {
+  .redes_icon:hover {
+    opacity: 0.5;
+  }
+}
+
+.redes_icon:active {
+  border-radius: 0.5rem;
+  opacity: 0.5;
+}
+
+.redes_icon_black {
+  transition: all 0.4s;
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (any-hover: hover) {
+  .redes_icon_black:hover {
+    opacity: 0.5;
+  }
+}
+
+.redes_icon_black:active {
+  border-radius: 0.5rem;
+  opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+  .redes_container {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    padding: 0;
+  }
+  .redes_icon_black {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.footer_redes_container {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.wsp_logo_fixed_container {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .wsp_logo_fixed_container {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    background-color: white;
+    bottom: 1rem;
+    right: 0.625rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.313rem;
+    border-color: black;
+    transition: all 0.4s;
+    outline: 0.313rem solid #25d366;
+  }
+}
+
+.wsp_logo_fixed_btn {
+  width: 3rem;
+  height: 3rem;
+
+  filter: brightness(0) saturate(100%) invert(64%) sepia(66%) saturate(540%)
+    hue-rotate(87deg) brightness(93%) contrast(89%);
+}
+
+@media (any-hover: hover) {
+  .wsp_logo_fixed_container:hover {
+    outline-color: darkgoldenrod;
+  }
+}
+
+.wsp_logo_fixed_container:active {
+  outline-color: darkgoldenrod;
+}

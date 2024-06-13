@@ -1,0 +1,102 @@
+:root {
+  --borderColor: black;
+  --inputColor: white;
+}
+
+@media (any-hover: hover) {
+  .btn-form:hover {
+    border-color: darkgoldenrod;
+    opacity: 0.7;
+  }
+}
+
+.btn-form:active {
+  border-color: darkgoldenrod;
+  opacity: 0.7;
+}
+
+.input,
+.select,
+.textarea,
+.btn-form {
+  border: 0.125rem solid var(--borderColor);
+  outline: none;
+  text-align: center;
+  width: min(75vw, 25rem);
+  transition: all 0.8s;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: darkgoldenrod;
+}
+.textarea {
+  height: 4rem;
+  resize: none;
+}
+
+.textarea:focus {
+  height: 12rem;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form_container_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form_container_textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .form_container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .input,
+  .select,
+  .textarea,
+  .btn-form {
+    width: calc(15rem + 10vw);
+    height: 3rem;
+  }
+
+  .textarea {
+    height: auto;
+  }
+
+  .textarea:focus {
+    height: auto;
+  }
+
+  .form_container_textarea {
+    display: grid;
+    grid-template-rows: auto 3rem;
+    gap: 2rem;
+  }
+
+  .form_container_input {
+    gap: 2rem;
+  }
+}
+.addres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}

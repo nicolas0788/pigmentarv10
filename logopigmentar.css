@@ -1,0 +1,77 @@
+.logo_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo_circulo_container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.logo_circulo_container_fila {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.logo_circulo {
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 0.5rem;
+  border-color: white;
+  transition-duration: 0.5s;
+}
+
+.logo_texto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.logo_circulo_mov {
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 0.8rem;
+  border-color: black;
+  transition-duration: 0.5s;
+}
+
+@media (min-width: 480px) {
+  .logo_circulo_mov {
+    border-width: 1.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .logo_circulo_mov {
+    border-width: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo_circulo_mov {
+    border-width: 1.7rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo_texto {
+    display: none;
+  }
+}
+
+.logo_circulo_container_mov {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition-duration: 0.5s;
+}
+
+@media (hover: hover) {
+  .logo_circulo_container_mov:hover {
+    transform: rotate(-45deg);
+  }
+}
