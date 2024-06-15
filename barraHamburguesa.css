@@ -3,6 +3,7 @@
   background-color: white;
   width: 3rem;
   border-radius: 3px;
+  transition-duration: 0.5s;
 }
 
 .barraHamb_container {
