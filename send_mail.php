@@ -8,9 +8,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars($_POST['textarea']);
 
     $to = "infopigmentar@gmail.com"; 
-    $subject = "Nuevo mensaje de contacto";
-    $body = "Nombre: $nombre\nApellido: $apellido\nEmail: $email\nTeléfono: $telefono\nCategoría: $categoria\nMensaje: $mensaje";
-    $headers = "From: no-reply@pigmentar.com"; 
+    //$subject = "Nuevo mensaje de contacto";
+    //$body = "Nombre: $nombre\nApellido: $apellido\nEmail: $email\nTeléfono: $telefono\nCategoría: $categoria\nMensaje: $mensaje";
+    //$headers = "From: no-reply@pigmentar.com";
+
+    if( empty(trim($nombre))) $nombre = 'anonimo';
+    if( empty(trim($apellido))) $apellido = '';
+
+    $body = <<<HTML 
+        <h1>Contacto desde la Web</h1>
+        <p>De: $nombre $apellido / $email</p>
+        <h2>Mensaje</h2>
+        $mensaje
+    HTML;
+
+    $headers = "MIME-Version: 1.0 \r\n";
+    $headers.= "Content-type: text/html;
+    charset=utf-8 \r\n";
+    $headers.= "From: $nombre $apellido <$email> \r\n";
+    $headers.= "To: Sitio Web <nicolas.molinari@hotmail.com> \r\n"
+    
+    
 
     if (mail($to, $subject, $body, $headers)) {
         $message = "Mensaje enviado con éxito.";
