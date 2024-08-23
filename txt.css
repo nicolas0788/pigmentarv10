@@ -63,6 +63,10 @@ p {
   transition: all 0.4s;
 }
 
+.txt--center {
+  text-align: center;
+}
+
 @media (any-hover: hover) {
   .txt--active:hover {
     opacity: 0.5;

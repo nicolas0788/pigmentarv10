@@ -74,7 +74,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
+  text-align: left;
   width: min(90%, 70rem);
   overflow: hidden;
   overflow: hidden;
