@@ -59,7 +59,7 @@ html {
 }
 
 .section_general_container {
-  min-height: 100vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +78,6 @@ html {
   width: min(90%, 70rem);
   overflow: hidden;
   overflow: hidden;
-  gap: calc(1rem + 1.5vw);
 }
 
 .buttons_container {
